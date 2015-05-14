@@ -4,7 +4,7 @@ filesize=267110
 sha512=1104fc7e6cbb4bb95e422e7801491067806df6849690be4068b5eec33a5fc84672a5bb4666357e9a46d2fae436f83b37402b6cc0c4ee69627e48d48a4d32a2ed
 
 [mirrors]
-https://codeload.github.com/anholt/libepoxy/tar.gz/v1.2
+http://ftp.cc.uoc.gr/mirrors/linux/lfs/LFS/conglomeration/libepoxy/libepoxy-1.2.tar.gz
 
 [deps]
 libx11
