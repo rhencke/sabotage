@@ -1,10 +1,10 @@
 [mirrors]
-http://cairographics.org/releases/cairo-1.12.16.tar.xz
-http://distfiles.lesslinux.org/cairo-1.12.16.tar.xz
+http://cairographics.org/releases/cairo-1.14.2.tar.xz
+http://distfiles.lesslinux.org/cairo-1.14.2.tar.xz
 
 [main]
-filesize=35889824
-sha512=35389305ba0906e2e1beab92966650fc7d7f8f41231e355ea2bf8693a333946f0693c125d1c50681e12b7f2aff85ae1fdcf957f3d83bc7eaacd52569884c6b2f
+filesize=35376404
+sha512=74d30f3f879f097b2c3408ef9698da8f337301f971c3eba7f336d02d6b2812d2ca0bd8bbc0cc7ee11127d3574910b1b77fde3b065cfd504436b62e17c2acb200
 
 [deps]
 fontconfig
@@ -25,6 +25,10 @@ install:
 EOF
 [ -n "$CROSS_COMPILE" ] && \
   xconfflags="--host=$($CC -dumpmachine|sed 's/musl/gnu/') --with-sysroot=$butch_root_dir"
+export ax_cv_c_float_words_bigendian=no
+$CC -dM -E - < /dev/null  | grep __FLOAT_WORD_ORDER__ | \
+  grep __ORDER_BIG_ENDIAN__ >/dev/null && \
+  export ax_cv_c_float_words_bigendian=yes || true
 CFLAGS="$optcflags -D_GNU_SOURCE" LDFLAGS="$optldflags" \
   ./configure -C --prefix="$butch_prefix" $xconfflags \
   ac_cv_func_XRenderCreateLinearGradient=yes \
