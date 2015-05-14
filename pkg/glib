@@ -9,14 +9,14 @@ perl
 pkgconf
 
 [mirrors]
-http://ftp.gnome.org/pub/gnome/sources/glib/2.36/glib-2.36.3.tar.xz
+http://ftp.gnome.org/pub/gnome/sources/glib/2.43/glib-2.43.4.tar.xz
 
 [main]
-filesize=6626972
-sha512=1ea45e7978bffb8ec23c8eddb74b0bab686126fd55d96956203bc1eef44e3047edcf2cbc39e018c83e56093f806c739bf320e6a359b45cd652e55c94a6f1ad19
+filesize=7056756
+sha512=2955a0220769e33ec35147cf4d31663fa2c9a2303d20fc7f69b7a0b407f34e21101c7a820a482fdd3415825075a95c5f260e262cd4e154313b57b266e42c4826
 
 [build]
-for p in glib-gtimer-varargs glib-no_python ; do
+for p in glib-gtimer-varargs ; do
 	echo $p
 	patch -p1 < "$K"/$p.patch
 done
