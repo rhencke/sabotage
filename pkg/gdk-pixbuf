@@ -1,9 +1,9 @@
 [mirrors]
-http://ftp.gnome.org/pub/gnome/sources/gdk-pixbuf/2.26/gdk-pixbuf-2.26.1.tar.xz
+http://ftp.gnome.org/pub/gnome/sources/gdk-pixbuf/2.31/gdk-pixbuf-2.31.4.tar.xz
 
 [main]
-filesize=1167608
-sha512=dd327e2d3f8c50906ccd02bbf484380240a59fb5cc991b7cdd3b56b156dd7495fe161b14c1f4e8606a7167199679786a0e9c12e92b5b87807a3312e48e9096e7
+filesize=2368788
+sha512=872283cb012d5e695446ddb39bbdeeeb9054293535a19e9d913b5b72904159067668e2ff61fda45648db15bced2e76b68fadfc38256da7c488ed2dbeda6f9523
 
 [deps]
 libtiff
