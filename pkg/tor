@@ -1,10 +1,10 @@
 [mirrors]
-https://www.torproject.org/dist/tor-0.2.5.10.tar.gz
-http://mirror.hackthissite.org/tor/tor-0.2.5.10.tar.gz
+https://www.torproject.org/dist/tor-0.2.6.8.tar.gz
+http://mirror.hackthissite.org/tor/tor-0.2.6.8.tar.gz
 
 [main]
-filesize=3166480
-sha512=0e6522964ac84231f7753ebe80239ce8c906c62bd35e5bd65ae5f85f246d488e32fbf121c58e501cbf0b8271468f6c10bef756080a7120479240486d6af22a8f
+filesize=3580783
+sha512=905904dd6334d3677f50ff4b810e1545f123d521f357276e401e07b8400702fc2b61cc78d4df14640c32f91e957660741633908c47a3635a5071f52d0d660177
 
 [deps]
 openssl

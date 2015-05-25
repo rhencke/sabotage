@@ -1,10 +1,10 @@
 [mirrors]
-http://mirrors.dotsrc.org/gcrypt/gnupg/gnupg-1.4.13.tar.bz2
-http://mirror.tje.me.uk/pub/mirrors/ftp.gnupg.org/gnupg/gnupg-1.4.13.tar.bz2
+http://mirrors.dotsrc.org/gcrypt/gnupg/gnupg-1.4.19.tar.bz2
+http://mirror.tje.me.uk/pub/mirrors/ftp.gnupg.org/gnupg/gnupg-1.4.19.tar.bz2
 
 [main]
-filesize=3685873
-sha512=62c330e02c311206c653cbadf21783599362601f4375ecb32a5bc8ff3f5c64160d95d28555fe06d7fb612c3802c87e0be1d0a68d61b404fdfcecf3580f14b738
+filesize=3713811
+sha512=cce2a83efb05f963ad0f8afd04999cc852889d46b4cad4cf399a37fd6e69f0911a5ccaa0192cb891a941cfa93125349b481efa789a127e3c0aa2c5ba53672741
 
 [deps]
 

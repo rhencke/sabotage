@@ -62,7 +62,7 @@ Set the `SABOTAGE_BUILDDIR`, `A`, and `MAKE_THREADS` variables. You may usually 
 
 Enable `SUPER` to use the following `./enter-chroot` script without root.
 
-NOTE: It is possible to build an i386 Sabotage from within an existing 32-bit chroot on a 64-bit system. The sabotage script automatically handles this scenario.
+NOTE: It is possible to build an i386 Sabotage from within an existing 32-bit chroot on a 64-bit system. The `enter-chroot` script automatically handles this scenario.
 
 	$ ./build-stage0        # ~2min on an AMD FX 8core, 75min on ARM Cortex A8 800Mhz
 	$ ./enter-chroot

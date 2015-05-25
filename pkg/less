@@ -1,12 +1,12 @@
-[deps]
-termcap
+[mirrors]
+http://www.greenwoodsoftware.com/less/less-471.tar.gz
 
 [main]
-filesize=307308
-sha512=a701392b8ee6f30e08ab7a3250f1c8592dad9bd0453c758e457335309860a3f2837efa1723f125f95ea3e7e24b9324cab9d2bc5a0236e55c35b22f09c357a25c
+filesize=316133
+sha512=4c6d43a031cea38eb79e88a1aa40f737869d2ab879bd6feb89adb8d2bdb6561471f9013aa083cdbbf142fcdbade367b1b4552ff26c0b710890c9be53815f75e9
 
-[mirrors]
-http://www.greenwoodsoftware.com/less/less-444.tar.gz
+[deps]
+termcap
 
 [build]
 #configure is missing some includes... which lead to implicit declarations
