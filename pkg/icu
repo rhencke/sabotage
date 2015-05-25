@@ -1,15 +1,14 @@
 [mirrors]
-http://download.icu-project.org/files/icu4c/52.1/icu4c-52_1-src.tgz
+http://download.icu-project.org/files/icu4c/55.1/icu4c-55_1-src.tgz
 
 [main]
-filesize=23875368
-sha512=5300b1d97340850d3d72af220ff5cbc2ae2820aff4367b60e52f17ead9831011dcda3d4c5af57c899d47b6fc964b23c9c8922954b32d314d669eb1a479a2efb0
+filesize=25600847
+sha512=21a3eb2c3678cd27b659eed073f8f1bd99c9751291d077820e9a370fd90b7d9b3bf414cc03dec4acb7fa61087e02d04f9f40e91a32c5180c718e2102fbd0cd35
 tardir=icu
 
 [deps]
 
 [build]
-patch -p1 < "$K"/icu-timezone.patch
 cd source
 [ -n "$CROSS_COMPILE" ] && \
   xconfflags="--host=$($CC -dumpmachine|sed 's/musl/gnu/') \
