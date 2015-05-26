@@ -41,5 +41,7 @@ barfdir() {
 trap barfdir EXIT
 
 ./build-stage0
-#./enter-chroot
-#./butch install stage1
+./enter-chroot << EOF
+butch install stage1
+exit \$?
+EOF
