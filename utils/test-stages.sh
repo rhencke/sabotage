@@ -3,6 +3,9 @@
 # Runs a Sabotage installation from scratch through stage 0 and stage 1, automatically.
 # Intended for basic automated testing (for example, does it actually build?)
 
+# The configuration is generated automatically from the host machine specs.
+# If specified, the environment variables CC and HOSTCC will be set in the configuration.
+
 set -e
 
 cd "$(dirname $0)/.."
@@ -20,14 +23,12 @@ echo "Building Sabotage in '$BUILDDIR'..."
 # as if we were a new user.
 cp KEEP/config.stage0 config
 
-sed -i -r -e '/^export (SABOTAGE_BUILDDIR|A|MAKE_THREADS)=.*$/ d' config
-cat << EOF >> config
-
-# added by test-stage0.sh
-export SABOTAGE_BUILDDIR=$BUILDDIR
-export A=$(uname -m)
-export MAKE_THREADS=$(grep -c 'processor\s*:' /proc/cpuinfo)
-EOF
+sed -i -e "s@^\(export SABOTAGE_BUILDDIR=\).*\$@\1$BUILDDIR@" \
+       -e "s@^\(export A=\).*\$@\1$(uname -m)@" \
+       -e "s@^\(export MAKE_THREADS=\).*\$@\1$(grep -c 'processor\s*:' /proc/cpuinfo)@" \
+       -e "s@^\(export CC=\)\(.*\)\$@\1${CC:-\2}@" \
+       -e "s@^\(export HOSTCC=\)\(.*\)\$@\1${HOSTCC:-\2}@" \
+       config
 
 ./build-stage0
 ./enter-chroot
