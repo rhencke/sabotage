@@ -1,3 +1,11 @@
+[mirrors]
+https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tar.xz
+http://sources.buildroot.net/Python-2.7.10.tar.xz
+
+[main]
+filesize=12250696
+sha512=67615a6defbcda062f15a09f9dd3b9441afd01a8cc3255e5bc45b925378a0ddc38d468b7701176f6cc153ec52a4f21671b433780d9bde343aa9b9c1b2ae29feb
+
 [deps]
 musl
 ncurses
@@ -5,14 +13,6 @@ openssl
 bzip2
 expat
 libffi
-
-[mirrors]
-https://www.python.org/ftp/python/2.7.7/Python-2.7.7.tar.xz
-http://sources.buildroot.net/Python-2.7.7.tar.xz
-
-[main]
-filesize=10496500
-sha512=ea2101feeb41da953b078b93977bd320a937f4047d074fbed568c7c73b1dfe433a66f7f14009ad7160862694a1b378e61f688831b655dcab8a8825e0d1a9acff
 
 [build]
 # work around buggy installer which puts stuff into prefix directly (omitting destdir) when
@@ -25,7 +25,6 @@ sha512=ea2101feeb41da953b078b93977bd320a937f4047d074fbed568c7c73b1dfe433a66f7f14
 # this doesn't work well with our symlink relocation strategy.
 patch -p1 < "$K"/python273-pathsearch.patch
 patch -p1 < "$K"/python-xcompile.patch
-patch -p0 < "$K"/python-libressl.patch
 patch -p1 < "$K"/python-includedirs.patch
 
 [ -n "$CROSS_COMPILE" ] && \

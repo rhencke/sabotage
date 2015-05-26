@@ -1,9 +1,9 @@
 [mirrors]
-ftp://kernel.org/pub/linux/kernel/v3.x/linux-3.19.4.tar.xz
-http://www.kernel.org/pub/linux/kernel/v3.x/linux-3.19.4.tar.xz
-http://ftp.free.fr/pub/linux/kernel/v3.x/linux-3.19.4.tar.xz
-http://ftp.heanet.ie/mirrors/linux/kernel/v3.x/linux-3.19.4.tar.xz
+ftp://kernel.org/pub/linux/kernel/v4.x/linux-4.0.4.tar.xz
+http://www.kernel.org/pub/linux/kernel/v4.x/linux-4.0.4.tar.xz
+http://ftp.free.fr/pub/linux/kernel/v4.x/linux-4.0.4.tar.xz
+http://ftp.heanet.ie/mirrors/linux/kernel/v4.x/linux-4.0.4.tar.xz
 
 [main]
-filesize=81677424
-sha512=131fd60d0c92eaba4684dc07c1e11a7e022d516b7f2cf60986cbef48fc0b6df57ff989285f0b2a74fad7b4ecd24a7d8a38e1ada2b305a089d280ba8308d6d36b
+filesize=82310664
+sha512=739e776c1627ca786bbf70b9d0d82ceaf630cc7f2407e9124304c418eaec466e058882305d6ec9eea43359432cce12bf16e224a5debab4f0bfc5b92bca69803d

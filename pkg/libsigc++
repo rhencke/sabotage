@@ -7,6 +7,7 @@ sha512=8c9aa63c56e978ec3e38fda9919ffbba173b97342d0e19d0ae3126e9edb97aa1d42e79897
 
 [deps.host]
 pkgconf
+m4
 
 [build]
 [ -n "$CROSS_COMPILE" ] && \

@@ -1,6 +1,9 @@
 #!/bin/sh
-# use: run-emulator.sh [no args, uses $H/config]
-# runs the chroot under QEMU
+# use: run-emulator.sh [--console --ro]
+# runs the rootfs under QEMU using 9P mount
+# --console puts QEMU in terminal-only mode (no SDL window)
+# --ro mounts the file system read-only
+# uses $H/config to detect rootfs location
  
 export H="$PWD"
 . ./config

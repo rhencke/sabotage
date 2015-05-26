@@ -1,9 +1,9 @@
 [mirrors]
-http://nodejs.org/dist/v0.10.2/node-v0.10.2.tar.gz
+http://nodejs.org/dist/v0.12.4/node-v0.12.4.tar.gz
 
 [main]
-filesize=12813547
-sha512=88615b4450ff10e70f4f53ec159518c1385da747e44dfb6c42dcf386c41b62048a9b77838036cf620202da1812c60893809f6aca2202e90b20158eb0f00aa60a
+filesize=19642076
+sha512=4d811a8f15068d2eea7e60a00c2803eb8ca8fd25b61ebf19aafc57be170abd75862d361ab9660e2be744efe66c69590b1a0a6b2bf8e3e72bb8d012c776262061
 
 [deps.host]
 dynamic-toolchain
@@ -12,9 +12,6 @@ python
 [build]
 patch -p1 < "$K"/nodejs-nameser_compat.h
 patch -p1 < "$K"/nodejs-openssl_termios.h
-patch -p1 < "$K"/nodejs-uv.patch
-patch -p1 < "$K"/nodejs-uv_ifaddrs.patch
-patch -p1 < "$K"/nodejs-i386.patch
 
 [ -z "$butch_prefix" ] && butch_prefix=/
 

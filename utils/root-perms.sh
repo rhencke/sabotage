@@ -13,7 +13,7 @@ if [ ! -e "$1"/src/config ] ; then
 	exit 1
 fi	
 
-for dir in / etc bin boot home include info lib libexec mnt root sbin share src srv sys tmp usr var ; do
+for dir in / etc bin boot home include lib libexec mnt root sbin share src srv sys tmp usr var ; do
         chown -R root:root "$1"/$dir
 done
 chmod 0755 "$1"/var/empty
