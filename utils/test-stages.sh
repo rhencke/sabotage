@@ -25,6 +25,7 @@ cp KEEP/config.stage0 config
 
 sed -i -e "s@^\(export SABOTAGE_BUILDDIR=\).*\$@\1$BUILDDIR@" \
        -e "s@^\(export A=\).*\$@\1$(uname -m)@" \
+       -e "s@^\(export MAKE_THREADS=\).*\$@\14@" \
        -e "s@^\(export CC=\)\(.*\)\$@\1${CC:-\2}@" \
        -e "s@^\(export HOSTCC=\)\(.*\)\$@\1${HOSTCC:-\2}@" \
        config
