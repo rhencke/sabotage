@@ -1,5 +1,5 @@
 language: c
-script: utils/test-stages.sh
+script: "HOSTCC=\"$CC\" utils/test-stages.sh"
 compiler:
  - gcc
  - clang
