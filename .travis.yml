@@ -1,7 +1,4 @@
 language: c
 sudo: required
 script: "HOSTCC=\"$CC\" sudo utils/test-stages.sh"
-compiler:
- - gcc
- - clang
 
