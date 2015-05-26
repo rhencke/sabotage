@@ -1,5 +1,5 @@
 language: c
-script: utils/test-stage0.sh
+script: utils/test-stages.sh
 compiler:
  - gcc
  - clang
