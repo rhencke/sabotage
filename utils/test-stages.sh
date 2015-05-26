@@ -15,7 +15,7 @@ if [ -e config ]; then
 	exit 1
 fi
 
-# Build sabotage in a new, non-existant directory.
+# Build sabotage in a new, non-existent directory.
 BUILDDIR="$(mktemp -d)/sabotage"
 echo "Building Sabotage in '$BUILDDIR'..."
 
@@ -30,6 +30,18 @@ sed -i -e "s@^\(export SABOTAGE_BUILDDIR=\).*\$@\1$BUILDDIR@" \
        -e "s@^\(export HOSTCC=\)\(.*\)\$@\1${HOSTCC:-\2}@" \
        config
 
+barfdir() {
+	if [ $? -ne 0 ]; then
+		for log in $(ls -c "$BUILDDIR/src/logs/" | head -n1); do
+			echo "----- $log -----"
+			cat "$BUILDDIR/src/logs/$log"
+		done
+	fi
+}
+
+trap barfdir EXIT
+
 ./build-stage0
+exit 1
 ./enter-chroot
 ./butch install stage1
