@@ -1,1 +1,5 @@
+compiler:
+	- gcc
+	- clang
+
 script: "utils/test-stage0.sh"
