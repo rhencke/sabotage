@@ -25,7 +25,6 @@ cp KEEP/config.stage0 config
 
 sed -i -e "s@^\(export SABOTAGE_BUILDDIR=\).*\$@\1$BUILDDIR@" \
        -e "s@^\(export A=\).*\$@\1$(uname -m)@" \
-       -e "s@^\(export MAKE_THREADS=\).*\$@\1$(grep -c 'processor\s*:' /proc/cpuinfo)@" \
        -e "s@^\(export CC=\)\(.*\)\$@\1${CC:-\2}@" \
        -e "s@^\(export HOSTCC=\)\(.*\)\$@\1${HOSTCC:-\2}@" \
        config
@@ -42,6 +41,5 @@ barfdir() {
 trap barfdir EXIT
 
 ./build-stage0
-exit 1
-./enter-chroot
-./butch install stage1
+#./enter-chroot
+#./butch install stage1
