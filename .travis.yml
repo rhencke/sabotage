@@ -1,5 +1,6 @@
 language: c
-script: "HOSTCC=\"$CC\" utils/test-stages.sh"
+sudo: required
+script: "HOSTCC=\"$CC\" sudo utils/test-stages.sh"
 compiler:
  - gcc
  - clang
