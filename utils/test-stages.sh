@@ -1,6 +1,6 @@
 #!/bin/sh
-# usage: test-stage0.sh [no args]
-# Runs a Sabotage installation from scratch up to stage 0, automatically.
+# usage: test-stages.sh [no args]
+# Runs a Sabotage installation from scratch through stage 0 and stage 1, automatically.
 # Intended for basic automated testing (for example, does it actually build?)
 
 set -e
@@ -30,3 +30,5 @@ export MAKE_THREADS=$(grep -c 'processor\s*:' /proc/cpuinfo)
 EOF
 
 ./build-stage0
+./enter-chroot
+./butch install stage1
