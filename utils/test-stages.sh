@@ -31,5 +31,5 @@ sed -i -e "s@^\(export SABOTAGE_BUILDDIR=\).*\$@\1$BUILDDIR@" \
        config
 
 ./build-stage0
-./enter-chroot
+SUPER=1 ./enter-chroot
 ./butch install stage1
