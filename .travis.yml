@@ -1,4 +1,3 @@
 language: c
-sudo: required
-script: "HOSTCC=\"$CC\" sudo utils/test-stages.sh"
+script: utils/test-stages.sh
 
