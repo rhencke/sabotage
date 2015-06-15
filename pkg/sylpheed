@@ -9,7 +9,6 @@ http://sylpheed.sraoss.jp/sylpheed/v3.3/sylpheed-3.3.0.tar.gz
 gtk+2
 
 [build]
-#patch -p1 < "$K"/some.patch
 
 CFLAGS="-D_GNU_SOURCE $optcflags" LDFLAGS="$optldflags" \
   ./configure -C --prefix="$butch_prefix"

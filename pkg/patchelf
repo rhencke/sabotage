@@ -8,7 +8,6 @@ sha512=90f4fe3184efe56bc95a8a560b74172db184443edc2b6827a78e55549fe96d539aa93bda0
 dynamic-toolchain
 
 [build]
-#patch -p1 < "$K/some.patch"
 # warning C++
 LDFLAGS="-static" CXXFLAGS="-O0 -g0" ./configure -C --prefix="$butch_prefix"
 make -j$MAKE_THREADS

@@ -9,7 +9,6 @@ http://xorg.freedesktop.org/archive/individual/util/makedepend-1.0.5.tar.bz2
 libx11
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix"
 make -j$MAKE_THREADS
 make DESTDIR="$butch_install_dir" install

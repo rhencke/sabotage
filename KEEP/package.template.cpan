@@ -1,9 +1,0 @@
-[deps]
-perl
-
-
-
-[build]
-perl Makefile.PL PREFIX="$butch_prefix" LIB="$butch_prefix/lib/perl5/site_perl" || exit 1
-make && make test && make DESTDIR="$butch_install_dir" install
-

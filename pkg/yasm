@@ -8,7 +8,6 @@ http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz
 [deps]
 
 [build]
-#patch -p1 < "$K/some.patch"
 [ -n "$CROSS_COMPILE" ] && \
   xconfflags="--host=$($CC -dumpmachine|sed 's/musl/gnu/') \
   --with-sysroot=$butch_root_dir"

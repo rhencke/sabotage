@@ -9,7 +9,6 @@ http://downloads.sourceforge.net/re2c/re2c-0.13.5.tar.gz
 dynamic-toolchain
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix"
 make -j$MAKE_THREADS
 make DESTDIR="$butch_install_dir" install

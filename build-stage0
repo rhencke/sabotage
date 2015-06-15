@@ -29,7 +29,7 @@ rm -f "$tmpc" "$tmpc".out
 mkdir -p "$C" 
 
 ### initialize chroot, if missing
-if [ ! -d "$R" ] ; then
+if [ ! -d "$R"/bin ] ; then
 	echo "$(date +'%F %T') initializing root system"
 
 	. "$H"/utils/setup-rootfs.sh

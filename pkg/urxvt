@@ -10,7 +10,6 @@ xorg-proto-headers
 xorg-libraries
 
 [build]
-#patch -p1 < "$K"/some.patch
 
 CFLAGS="-D_GNU_SOURCE $optcflags" LDFLAGS="$optldflags" \
   ./configure -C --enable-xft --disable-font-styles --disable-perl --disable-utmp --disable-wtmp --disable-pixbuf --disable-startup-notification --disable-transparency --prefix="$butch_prefix"

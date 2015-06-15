@@ -13,7 +13,6 @@ libraw
 
 
 [build]
-#patch -p1 < "$K/some.patch"
 # there are more optional plugins: poppler, librsvg, libspectre but they depend on lots of stuff
 CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix" --enable-libraw --enable-gstreamer
 make -j$MAKE_THREADS

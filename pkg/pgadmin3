@@ -13,7 +13,6 @@ postgresql
 wxgtk
 
 [build]
-#patch -p1 < "$K/some.patch"
 
 printf '#!/bin/sh\ntrue\n' > pgadmin/ver_svn.sh
 

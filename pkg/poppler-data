@@ -9,7 +9,6 @@ sha512=5e5f5302c475d3630961b7a89a2e8c8b77884ee99289d97b626d9f1daee54314f4b1d0703
 poppler
 
 [build]
-#patch -p1 < "$K/some.patch"
 #CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix"
 #make -j$MAKE_THREADS
 make prefix="$butch_install_dir""$butch_prefix" install

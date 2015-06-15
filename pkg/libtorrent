@@ -13,7 +13,6 @@ libsigc++
 curl
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS="-D_GNU_SOURCE $optcflags" LDFLAGS="$optldflags" \
 CXXFLAGS="$optcflags" \
 ./configure -C --prefix="$butch_prefix"

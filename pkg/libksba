@@ -9,7 +9,6 @@ sha512=51023119346fb7ffa31eee205376b7efb0fab42dee73c669c3174c2ebf4100008d3f508f8
 libgpg-error
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix"
 make -j$MAKE_THREADS
 make DESTDIR="$butch_install_dir" install

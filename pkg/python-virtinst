@@ -10,7 +10,6 @@ libvirt
 python-urlgrabber
 
 [build]
-#patch -p1 < "$K"/some.patch
 
 python setup.py build
 python setup.py install --prefix="$butch_prefix" --root="$butch_install_dir"

@@ -9,7 +9,6 @@ sha512=17e3333f99d37b6b7f72282482e559210a1181cb1c5c9d760e6c9f7ab8454a4236ad53d97
 libcap2
 
 [build]
-#patch -p1 < "$K/some.patch"
 #CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix"
 make -j$MAKE_THREADS
 

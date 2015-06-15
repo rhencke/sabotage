@@ -15,7 +15,6 @@ libx11
 libxext
 
 [build]
-#patch -p1 < "$K/some.patch"
 cat << EOF > test/Makefile.in
 all:
 	true

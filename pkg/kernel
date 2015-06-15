@@ -35,6 +35,7 @@ dopatch "$K"/linux-virtio9p.patch
 dopatch "$K"/linux-3.8-trap.patch
 dopatch "$K"/linux-3.18-posix_sed.patch
 dopatch "$K"/linux-3.18-posix_sh.patch
+dopatch "$K"/linux-4.0-wext-signallevels.patch
 
 if [ -n "$ENABLE_GRSEC" ] ; then
 	patchname="$GRSEC_VER".patch

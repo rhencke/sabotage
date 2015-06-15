@@ -9,7 +9,6 @@ tardir=.
 [deps]
 
 [build]
-#patch -p1 < "$K"/some.patch
 mv Makefile Makefile.org
 cat << EOF > Makefile
 PACKAGE=        tzcode

@@ -8,7 +8,6 @@ tardir=procps-ng-3.3.9
 [deps]
 
 [build]
-#patch -p1 < "$K/some.patch"
 cat << EOF > include/error.h
 #include <stdio.h>
 #include <string.h>

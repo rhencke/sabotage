@@ -15,7 +15,6 @@ alsa-lib
 libjpeg
 
 [build]
-#patch -p1 < "$K"/some.patch
 
 mkdir build && cd build
 

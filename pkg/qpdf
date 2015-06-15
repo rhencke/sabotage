@@ -9,7 +9,6 @@ sha512=207d5539b434cca9a7f582882786b4d5f473cd374a1a249a0d4f335c7d9ef22cdb857a32e
 pcre
 
 [build]
-#patch -p1 < "$K"/some.patch
 
 CFLAGS="-D_GNU_SOURCE $optcflags" LDFLAGS="$optldflags" \
   ./configure -C --prefix="$butch_prefix"

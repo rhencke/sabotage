@@ -9,7 +9,6 @@ sha512=d153dcd5bb846450e9d76fe247f2b2e627e760feaad1bfd4c503a39af2128fad363078846
 gstreamer01
 
 [build]
-#patch -p1 < "$K"/some.patch
 
 CFLAGS="-D_GNU_SOURCE $optcflags" LDFLAGS="$optldflags" \
   ./configure -C --prefix="$butch_prefix"

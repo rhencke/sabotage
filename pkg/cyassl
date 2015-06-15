@@ -1,11 +1,11 @@
-[deps]
-
 [mirrors]
-http://www.yassl.com/altpkg/cyassl-3.1.0.tar.xz
+http://www.yassl.com/altpkg/wolfssl-3.4.6.tar.xz
 
 [main]
-filesize=813832
-sha512=534a60fbd120db293ad796057c87c7394a72cb2d13e45001987d7e7418335ad6c20171d06747a6134d854164c5517db6c41aee18df48ac56ab4f90511bfc7be2
+filesize=951728
+sha512=18bda7d9e2c01347076e4e718cc41b7dcfb07a22d404d221508b028f1a2afee0f986b211cd385a792a9648a7dabbdf5ecad5ca3570ca2aaa9432645aa87801c3
+
+[deps]
 
 [build]
 [ -n "$CROSS_COMPILE" ] && \

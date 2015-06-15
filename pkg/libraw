@@ -9,7 +9,6 @@ http://www.libraw.org/data/LibRaw-0.14.7.tar.gz
 liblcms
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix"
 make -j$MAKE_THREADS
 make DESTDIR="$butch_install_dir" install

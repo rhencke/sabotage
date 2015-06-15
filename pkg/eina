@@ -9,7 +9,6 @@ http://download.enlightenment.org/releases/eina-1.7.8.tar.gz
 musl
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS="-D_GNU_SOURCE" ./configure --prefix="$butch_prefix"
 make -j$MAKE_THREADS
 make DESTDIR="$butch_install_dir" install

@@ -11,7 +11,6 @@ tcl
 libx11
 
 [build]
-#patch -p1 < "$K/some.patch"
 cd unix
 CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix"
 make -j$MAKE_THREADS

@@ -1,15 +1,16 @@
+[mirrors]
+http://www.etalabs.net/musl/releases/musl-1.1.10.tar.gz
+http://www.musl-libc.org/releases/musl-1.1.10.tar.gz
+
+[main]
+filesize=907181
+sha512=183a66a8cc9cd056a8387a1602dd44b502d8976642a21dd0dcef51165fa0dec8a4a124fda6c1918f402b20ad2d6037fcc188a8b174b07a0cbedf11fc2e011141
+
 [deps.host]
 gcc4
 
-[mirrors]
-http://www.etalabs.net/musl/releases/musl-1.1.9.tar.gz
-http://www.musl-libc.org/releases/musl-1.1.9.tar.gz
-
-[main]
-filesize=905914
-sha512=a6f899814b728113d3ad1b9d03dfde4991af1d9cb85cf596583d6c98cfd596dc2523453ff9bd6e40daef9a63682bf39a66d88ddaa5b51bac72f52c9ff43b9590
-
 [build]
+patch -p1 < "$K"/musl-1.1.10-locale.patch
 ./configure --prefix=$butch_prefix --syslibdir=$butch_prefix/lib
 if [ "$A" = "powerpc" ] ; then
 cat << EOF >> config.mak

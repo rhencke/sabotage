@@ -9,7 +9,6 @@ sha512=4ca3e94b5826f7fe87d840feddf0c130fa77e8f14f22a59d9749252a5106d54661237e3c9
 [deps]
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix"
 sed -i 's@--no-preserve=ownership@@g' Makefile
 

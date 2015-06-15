@@ -10,7 +10,6 @@ sha512=a41debde13d489e47c635bd61ce691e7b0a1470a91df3d16e43bd7c0985064708c4d69b8f
 http://invisible-island.net/datafiles/release/byacc.tar.gz
 
 [build]
-#patch -p1 < "$K"/some.patch
 
 [ -n "$CROSS_COMPILE" ] && \
   xconfflags="--host=$($CC -dumpmachine|sed 's/musl/gnu/') \

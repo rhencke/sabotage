@@ -8,7 +8,7 @@ http://download.oracle.com/berkeley-db/db-5.3.21.tar.gz
 [deps]
 
 [build]
-patch -p1 < "$K/bdb-configure.patch"
+patch -p1 < "$K"/bdb-configure.patch
 cd build_unix
 mv ../config.cache .
 

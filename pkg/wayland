@@ -10,7 +10,6 @@ libffi
 expat
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS="-DTFD_CLOEXEC=O_CLOEXEC" ./configure --prefix="$butch_prefix" --disable-documentation
 make -j$MAKE_THREADS
 make DESTDIR="$butch_install_dir" install

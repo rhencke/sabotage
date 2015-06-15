@@ -11,7 +11,6 @@ libgsf
 pcre
 
 [build]
-#patch -p1 < "$K/some.patch"
 sed -i 's#info (r, NULL#full&, 0#' goffice/utils/regutf8.c
 [ -n "$CROSS_COMPILE" ] && xconfflags="--host=$($CC -dumpmachine)"
 cp -f "$K"/config.sub .

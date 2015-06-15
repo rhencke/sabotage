@@ -10,7 +10,6 @@ glib
 libxml2
 
 [build]
-#patch -p1 < "$K/some.patch"
 
 mkdir .deps
 touch .deps/update_mime_database-update-mime-database.Tpo

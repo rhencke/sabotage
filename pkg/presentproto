@@ -8,7 +8,6 @@ sha512=6d6b3cb78ff7c6ad8103d0003479f94702aea412640feec5d82cb630c9560fd0e1f7b6124
 [deps]
 
 [build]
-#patch -p1 < "$K"/some.patch
 
 [ -n "$CROSS_COMPILE" ] && \
   xconfflags="--host=$($CC -dumpmachine|sed 's/musl/gnu/') \

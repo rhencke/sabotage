@@ -12,7 +12,6 @@ intltool
 gdk-pixbuf
 
 [build]
-#patch -p1 < "$K/some.patch"
 [ -n "$CROSS_COMPILE" ] && xconfflags="--host=$($CC -dumpmachine)"
 cp -f "$K"/config.sub .
 CFLAGS="$optcflags" LDFLAGS="$optldflags" \

@@ -10,7 +10,6 @@ gstreamer01
 pango
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix" \
 --disable-oggtest --disable-vorbistest --disable-freetypetest \
 --disable-examples--disable-nls --disable-silent-rules \

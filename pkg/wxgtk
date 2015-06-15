@@ -11,7 +11,6 @@ sha512=5db19299fd4607c943ceaceaf5ef666d03f6473d09957233055564ed6b2e916383835436c
 gtk+2
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS="-D_GNU_SOURCE $optcflags" \
 CXXFLAGS="-D_GNU_SOURCE $optcflags" \
 LDFLAGS="$optldflags" \

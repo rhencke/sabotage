@@ -11,7 +11,6 @@ sha512=bb20de004271ab40ec26da0d4759970d02855970c88d4ca9971b7d41ea72679032619cc95
 alsa-lib
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix"
 make -j$MAKE_THREADS
 make DESTDIR="$butch_install_dir" install

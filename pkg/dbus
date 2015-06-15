@@ -10,7 +10,6 @@ libx11
 
 
 [build]
-#patch -p1 < "$K/some.patch"
 mkdir -p dbus/sys
 printf '#include <fcntl.h>\n\n' > dbus/sys/fcntl.h
 CFLAGS=-D_GNU_SOURCE ./configure -C --prefix="$butch_prefix" --disable-tests --disable-verbose-mode

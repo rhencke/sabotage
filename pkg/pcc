@@ -11,7 +11,6 @@ bison
 flex
 
 [build]
-#patch -p1 < "$K/some.patch"
 CFLAGS=-D_BSD_SOURCE ./configure -C --prefix="$butch_prefix" --with-yasm
 make -j$MAKE_THREADS
 make DESTDIR="$butch_install_dir" install
